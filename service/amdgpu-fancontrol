@@ -1,0 +1,6 @@
+#!/sbin/openrc-run
+
+name="amdgpu-fan"
+command="/usr/bin/amdgpu-fancontrol"
+command_background=true
+pidfile="/run/${RC_SVCNAME}.pid"
