@@ -3,6 +3,8 @@ Description=amdgpu-fancontrol
 
 [Service]
 Type=simple
+Restart=on-failure
+RestartSec=5s
 ExecStart=/usr/bin/amdgpu-fancontrol
 
 [Install]
